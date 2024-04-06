@@ -1,15 +1,11 @@
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByTagName("img");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
- 
-  setTimeout(showSlides, 2000);
+function random()
+{
+    const imgs =['url("king1.jpeg")','url("king2.jpg")'];
+    const pic = document.querySelector('section')
+    const a= imgs[Math.floor(Math.random()*imgs.length)];
+    
+    pic.style.backgroundImage = a ;
 }
+
+setInterval(random,2000);
