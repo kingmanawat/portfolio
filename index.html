@@ -4,82 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <section >
+    <div class="main">
+        <div class="hero">
 
-    <div class="mainimg">
-        <!-- <img class="mainimg" src="king.jpg" alt=""> -->
+        </div>
     </div>
-   <nav class="navbar">
-        <p class="logo">KINGMANAWAT</p>
-        <ul class="links">
-            <li class="link-items">
-                <a href="" class="link">Home</a>
-            </li>
-            <li class="link-items">
-                <a href="" class="link">About</a>
-            </li>
-            <li class="link-items">
-                <a href="" class="link">Contact</a>
-            </li>
-        </ul>
-   </nav>
-   <div class="intro">
-    <h1 class="hh">
-        Hi There !
-    </h1>
-    <h2>
-        I am Mahendra Singh Rao <br>
-        I am <span class="typewriter"></span>
-      </h2>      
-        
-    </div>
-</section>
-
-   <div class="About">
-    <div class="aboutimg">
-        <img src="KINGMANAWAT.jpg" alt="">
-    </div>
-    <div class="aboutme">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem voluptates veritatis nemo pariatur ducimus eaque commodi quaerat, mollitia deleniti tempore facere distinctio corrupti ullam maiores consectetur esse natus maxime.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem possimus delectus autem? Officiis odit vitae consequatur facilis veniam dolore tenetur at, velit et quaerat quibusdam dignissimos, sequi voluptatibus voluptates cumque?</p>
-    </div>
-   </div>
 </body>
-<script>
-    const typewriterText = document.querySelector(".typewriter");
-const phrases = ["Farmer....","Youtuber....","Rider....","PhotoGrapher....","Happy Person....."];
-
-let phraseIndex = 0;
-let characterIndex = 0;
-
-function type() {
-  if (characterIndex < phrases[phraseIndex].length) {
-    typewriterText.textContent += phrases[phraseIndex][characterIndex];
-    characterIndex++;
-    setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 1000);
-  }
-}
-
-function erase() {
-  if (characterIndex > 0) {
-    typewriterText.textContent = phrases[phraseIndex].substring(0, characterIndex - 1);
-    characterIndex--;
-    setTimeout(erase, 50);
-  } else {
-    phraseIndex = (phraseIndex + 1) % phrases.length;
-    setTimeout(type, 250);
-  }
-}
-
-type();
-
-</script>
 </html>
