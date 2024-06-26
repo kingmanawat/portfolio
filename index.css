@@ -97,6 +97,8 @@ section#hero{
 #hero h1{
     font-size: 3rem;
     margin-bottom: 1rem;
+    background-color: white;
+    margin-right: 1200px;
 }
 #hero h2{
     font-size: 2.5rem;
@@ -116,6 +118,8 @@ section#hero{
     #hero h1{
         font-size: 2rem;
         margin-bottom: 1rem;
+        background-color: white;
+        margin-right: 1200rem;
     }
     #hero h2{
         font-size: 1.5rem;
