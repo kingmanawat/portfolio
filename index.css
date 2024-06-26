@@ -113,6 +113,14 @@ section#hero{
     .dropdown_menu {
         display: block;
     }
+    #hero h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    #hero h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
     @media (max-width: 576px){
         .dropdown_menu{
             left: 2rem;
@@ -120,6 +128,14 @@ section#hero{
         }
         section#hero {
             padding-left: 20px;
+        }
+        #hero h1{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        #hero h2{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 }
