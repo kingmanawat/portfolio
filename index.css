@@ -82,6 +82,26 @@ header{
 .dropdown_menu.open{
     height: 140px;
 }
+section#hero{
+    height: calc(100vh-60px);
+    display: flex;
+    padding-top: 200px;
+    padding-left: 150px;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align:center; */
+    color: powderblue;
+    text-shadow: 1px 1px purple;
+}
+#hero h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#hero h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 @media (max-width:780px) {
     .navbar .links{
         display: none;
@@ -92,5 +112,14 @@ header{
     }
     .dropdown_menu {
         display: block;
+    }
+    @media (max-width: 576px){
+        .dropdown_menu{
+            left: 2rem;
+            width: unset;
+        }
+        section#hero {
+            padding-left: 20px;
+        }
     }
 }
